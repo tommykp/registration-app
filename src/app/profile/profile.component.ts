@@ -23,18 +23,15 @@ export class ProfileComponent {
 
 	onClick(): void {
 
-		if (!this.checkUsername(this.username) && !this.checkPassword(this.password))
-		{
+		if (!this.checkUsername(this.username) && !this.checkPassword(this.password)) {
 			this.messageService.add('Username shall contain at least 5 alpha-numeric characters. Password shall be at least 8 characters long and contain 1 number, 1 uppercase, 1 lowercase.');
-			this.isSuccess = false;			
+			this.isSuccess = false;
 		}
-		else if (!this.checkUsername(this.username))
-		{
+		else if (!this.checkUsername(this.username)) {
 			this.messageService.add('Username shall contain at least 5 alpha-numeric characters.');
 			this.isSuccess = false;
 		}
-		else if (!this.checkPassword(this.password))
-		{
+		else if (!this.checkPassword(this.password)) {
 			this.messageService.add('Password shall be at least 8 characters long and contain 1 number, 1 uppercase, 1 lowercase.');
 			this.isSuccess = false;
 		}
