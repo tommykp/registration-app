@@ -1,0 +1,5 @@
+<div *ngIf='hasMessage()' class="alert alert-dismissible fade show" [class.alert-success]="isSuccess"
+  [class.alert-danger]="!isSuccess" role="alert"> {{message}}
+  <button type="button" class="close" (click)="clear()"><span>&times;</span>
+  </button>
+</div>

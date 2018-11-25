@@ -1,0 +1,16 @@
+div.jumbotron {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+form.center {
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    width: 100%;
+}
+input {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
