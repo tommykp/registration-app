@@ -4,11 +4,9 @@ import { Observable } from 'rxjs';
 import { environment } from '../../environments/environment';
 import { Profile } from './profile';
 
-
 @Injectable({
 	providedIn: 'root'
 })
-
 export class ProfileService {
 
 	private static readonly profileUrl = `${environment.apiUrl}/profiles`;
@@ -18,5 +16,4 @@ export class ProfileService {
 	public createProfile(profile: Profile): Observable<Profile> {
 		return this.http.post<Profile>(ProfileService.profileUrl, profile);
 	}
-
 }

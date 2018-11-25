@@ -8,7 +8,6 @@ import { ProfileService } from './profile.service';
 	templateUrl: './profile.component.html',
 	styleUrls: ['./profile.component.css']
 })
-
 export class ProfileComponent {
 
 	private static readonly USERNAME_PATTERN = "^[a-zA-Z0-9]{5,}$";
